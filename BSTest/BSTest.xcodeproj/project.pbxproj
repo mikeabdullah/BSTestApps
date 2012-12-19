@@ -14,6 +14,7 @@
 		AD9362501681C0DF00B4FA9C /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = AD93624F1681C0DF00B4FA9C /* Document.m */; };
 		AD9362531681C0DF00B4FA9C /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9362511681C0DF00B4FA9C /* Document.xib */; };
 		AD9362561681C0DF00B4FA9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9362541681C0DF00B4FA9C /* MainMenu.xib */; };
+		AD93629A1681C5DE00B4FA9C /* BSManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362991681C5DE00B4FA9C /* BSManagedDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		AD93624F1681C0DF00B4FA9C /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		AD9362521681C0DF00B4FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
 		AD9362551681C0DF00B4FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AD9362981681C5DE00B4FA9C /* BSManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSManagedDocument.h; sourceTree = "<group>"; };
+		AD9362991681C5DE00B4FA9C /* BSManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSManagedDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		AD9362421681C0DF00B4FA9C /* BSTest */ = {
 			isa = PBXGroup;
 			children = (
+				AD9362971681C5DE00B4FA9C /* BSManagedDocument */,
 				AD93624E1681C0DF00B4FA9C /* Document.h */,
 				AD93624F1681C0DF00B4FA9C /* Document.m */,
 				AD9362511681C0DF00B4FA9C /* Document.xib */,
@@ -103,6 +107,16 @@
 				AD93624B1681C0DF00B4FA9C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD9362971681C5DE00B4FA9C /* BSManagedDocument */ = {
+			isa = PBXGroup;
+			children = (
+				AD9362981681C5DE00B4FA9C /* BSManagedDocument.h */,
+				AD9362991681C5DE00B4FA9C /* BSManagedDocument.m */,
+			);
+			name = BSManagedDocument;
+			path = ../../BSManagedDocument;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 			files = (
 				AD9362491681C0DF00B4FA9C /* main.m in Sources */,
 				AD9362501681C0DF00B4FA9C /* Document.m in Sources */,
+				AD93629A1681C5DE00B4FA9C /* BSManagedDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +322,7 @@
 				AD93625B1681C0DF00B4FA9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

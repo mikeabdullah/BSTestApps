@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Common">
+      <Group
+         location = "group:BSManagedDocument"
+         name = "BSManagedDocument">
+         <FileRef
+            location = "group:BSManagedDocument.h">
+         </FileRef>
+         <FileRef
+            location = "group:BSManagedDocument.m">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
       location = "group:BSTestArc/BSTestArc.xcodeproj">
    </FileRef>

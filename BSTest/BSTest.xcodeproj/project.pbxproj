@@ -99,7 +99,6 @@
 		AD9362421681C0DF00B4FA9C /* BSTest */ = {
 			isa = PBXGroup;
 			children = (
-				AD9362E8168205E200B4FA9C /* BSTest.entitlements */,
 				AD9362971681C5DE00B4FA9C /* BSManagedDocument */,
 				AD9362E51681E3A300B4FA9C /* WindowController.h */,
 				AD9362E61681E3A300B4FA9C /* WindowController.m */,
@@ -118,6 +117,7 @@
 			children = (
 				AD9362441681C0DF00B4FA9C /* BSTest-Info.plist */,
 				AD9362451681C0DF00B4FA9C /* InfoPlist.strings */,
+				AD9362E8168205E200B4FA9C /* BSTest.entitlements */,
 				AD9362481681C0DF00B4FA9C /* main.m */,
 				AD93624A1681C0DF00B4FA9C /* BSTest-Prefix.pch */,
 				AD93624B1681C0DF00B4FA9C /* Credits.rtf */,

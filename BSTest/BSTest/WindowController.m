@@ -7,6 +7,8 @@
 //
 
 #import "WindowController.h"
+#import "Document.h"
+#import "Ebook.h"
 
 @interface WindowController ()
 
@@ -30,4 +32,40 @@
 
 }
 
+- (IBAction)addFile:(id)sender {
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+
+    [openPanel setAllowedFileTypes:@[@"public.plain-text"]];
+
+    [openPanel setAllowsMultipleSelection:NO];
+
+    [openPanel beginWithCompletionHandler:^(NSInteger result) {
+        if (result == NSFileHandlingPanelCancelButton) {
+            return;
+        }
+
+        NSURL *fileUrl = [openPanel URL];
+        NSString *fileName = [[fileUrl path] lastPathComponent];
+        NSError *error;
+
+        NSData *fileData = [NSData dataWithContentsOfURL:fileUrl options:NSDataReadingUncached error:&error];
+
+        if (!fileData) {
+            [self presentError:error];
+            return;
+        }
+
+        Document *document = self.document;
+
+        Ebook *ebook = [Ebook insertInManagedObjectContext:document.managedObjectContext];
+        ebook.contents = fileData;
+        ebook.title = fileName;
+        ebook.typeValue = EbookTypeText;
+    }];
+    
+}
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification {
+    
+}
 @end

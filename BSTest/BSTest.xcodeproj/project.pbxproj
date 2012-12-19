@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD93623D1681C0DF00B4FA9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD93623C1681C0DF00B4FA9C /* Cocoa.framework */; };
 		AD9362471681C0DF00B4FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9362451681C0DF00B4FA9C /* InfoPlist.strings */; };
 		AD9362491681C0DF00B4FA9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362481681C0DF00B4FA9C /* main.m */; };
 		AD93624D1681C0DF00B4FA9C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AD93624B1681C0DF00B4FA9C /* Credits.rtf */; };
@@ -16,10 +15,10 @@
 		AD9362561681C0DF00B4FA9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9362541681C0DF00B4FA9C /* MainMenu.xib */; };
 		AD93629A1681C5DE00B4FA9C /* BSManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362991681C5DE00B4FA9C /* BSManagedDocument.m */; };
 		AD9362A71681CDAA00B4FA9C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD9362A51681CDAA00B4FA9C /* Model.xcdatamodeld */; };
-		AD9362CB1681D60400B4FA9C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9362401681C0DF00B4FA9C /* CoreData.framework */; };
 		AD9362CF1681D67100B4FA9C /* Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362CE1681D67100B4FA9C /* Ebook.m */; };
 		AD9362D31681D67900B4FA9C /* _Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362D21681D67900B4FA9C /* _Ebook.m */; };
 		AD9362E71681E3A400B4FA9C /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362E61681E3A300B4FA9C /* WindowController.m */; };
+		AD9362E91682065F00B4FA9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD93623C1681C0DF00B4FA9C /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +45,7 @@
 		AD9362D21681D67900B4FA9C /* _Ebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Ebook.m; sourceTree = "<group>"; };
 		AD9362E51681E3A300B4FA9C /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		AD9362E61681E3A300B4FA9C /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		AD9362E8168205E200B4FA9C /* BSTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BSTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9362CB1681D60400B4FA9C /* CoreData.framework in Frameworks */,
-				AD93623D1681C0DF00B4FA9C /* Cocoa.framework in Frameworks */,
+				AD9362E91682065F00B4FA9C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +99,7 @@
 		AD9362421681C0DF00B4FA9C /* BSTest */ = {
 			isa = PBXGroup;
 			children = (
+				AD9362E8168205E200B4FA9C /* BSTest.entitlements */,
 				AD9362971681C5DE00B4FA9C /* BSManagedDocument */,
 				AD9362E51681E3A300B4FA9C /* WindowController.h */,
 				AD9362E61681E3A300B4FA9C /* WindowController.m */,
@@ -348,6 +348,8 @@
 		AD93625A1681C0DF00B4FA9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BSTest/BSTest.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BSTest/BSTest-Prefix.pch";
@@ -360,6 +362,8 @@
 		AD93625B1681C0DF00B4FA9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BSTest/BSTest.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BSTest/BSTest-Prefix.pch";

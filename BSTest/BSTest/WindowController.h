@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface WindowController : NSWindowController
+@interface WindowController : NSWindowController <NSTableViewDelegate>
 
-@property (assign) IBOutlet NSView *contentView;
+@property (assign) IBOutlet NSArrayController *arrayController;
+@property (assign) IBOutlet NSTextView *contentView;
+
+- (IBAction)addFile:(id)sender;
 
 @end

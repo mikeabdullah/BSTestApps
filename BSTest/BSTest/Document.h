@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "BSManagedDocument.h"
 
-@interface Document : NSDocument
+@interface Document : BSManagedDocument
 
 @end

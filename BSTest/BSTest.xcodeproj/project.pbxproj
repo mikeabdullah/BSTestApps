@@ -19,6 +19,7 @@
 		AD9362CB1681D60400B4FA9C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9362401681C0DF00B4FA9C /* CoreData.framework */; };
 		AD9362CF1681D67100B4FA9C /* Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362CE1681D67100B4FA9C /* Ebook.m */; };
 		AD9362D31681D67900B4FA9C /* _Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362D21681D67900B4FA9C /* _Ebook.m */; };
+		AD9362E71681E3A400B4FA9C /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362E61681E3A300B4FA9C /* WindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		AD9362CE1681D67100B4FA9C /* Ebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ebook.m; sourceTree = "<group>"; };
 		AD9362D11681D67900B4FA9C /* _Ebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Ebook.h; sourceTree = "<group>"; };
 		AD9362D21681D67900B4FA9C /* _Ebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Ebook.m; sourceTree = "<group>"; };
+		AD9362E51681E3A300B4FA9C /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		AD9362E61681E3A300B4FA9C /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				AD9362971681C5DE00B4FA9C /* BSManagedDocument */,
+				AD9362E51681E3A300B4FA9C /* WindowController.h */,
+				AD9362E61681E3A300B4FA9C /* WindowController.m */,
 				AD93624E1681C0DF00B4FA9C /* Document.h */,
 				AD93624F1681C0DF00B4FA9C /* Document.m */,
 				AD9362511681C0DF00B4FA9C /* Document.xib */,
@@ -247,6 +252,7 @@
 				AD9362A71681CDAA00B4FA9C /* Model.xcdatamodeld in Sources */,
 				AD9362CF1681D67100B4FA9C /* Ebook.m in Sources */,
 				AD9362D31681D67900B4FA9C /* _Ebook.m in Sources */,
+				AD9362E71681E3A400B4FA9C /* WindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

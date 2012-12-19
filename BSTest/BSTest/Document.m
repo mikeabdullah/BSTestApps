@@ -7,6 +7,7 @@
 //
 
 #import "Document.h"
+#import "WindowController.h"
 
 @implementation Document
 
@@ -19,13 +20,10 @@
     return self;
 }
 
-- (NSString *)windowNibName
-{
-    // Override returning the nib file name of the document
-    // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
-    return @"Document";
+- (void)makeWindowControllers {
+    WindowController *windowController = [WindowController new];
+    [self addWindowController:windowController];
 }
-
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
     [super windowControllerDidLoadNib:aController];

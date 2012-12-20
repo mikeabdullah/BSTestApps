@@ -14,6 +14,10 @@
 		AD93627F1681C29000B4FA9C /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = AD93627E1681C29000B4FA9C /* Document.m */; };
 		AD9362821681C29000B4FA9C /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9362801681C29000B4FA9C /* Document.xib */; };
 		AD9362851681C29000B4FA9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9362831681C29000B4FA9C /* MainMenu.xib */; };
+		EEDDF8D7168270A400AD6D0D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEDDF8D5168270A400AD6D0D /* Model.xcdatamodeld */; };
+		EEDDF8ED1682751400AD6D0D /* Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDDF8EC1682751400AD6D0D /* Ebook.m */; };
+		EEDDF8F11682753500AD6D0D /* _Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDDF8F01682753500AD6D0D /* _Ebook.m */; };
+		EEDDF8F51682761100AD6D0D /* BSManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDDF8F41682761100AD6D0D /* BSManagedDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,14 @@
 		AD93627E1681C29000B4FA9C /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		AD9362811681C29000B4FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
 		AD9362841681C29000B4FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EEDDF8D216826F6F00AD6D0D /* BSTestArc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BSTestArc.entitlements; sourceTree = "<group>"; };
+		EEDDF8D6168270A400AD6D0D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		EEDDF8EB1682751400AD6D0D /* Ebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ebook.h; sourceTree = "<group>"; };
+		EEDDF8EC1682751400AD6D0D /* Ebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ebook.m; sourceTree = "<group>"; };
+		EEDDF8EF1682753500AD6D0D /* _Ebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Ebook.h; sourceTree = "<group>"; };
+		EEDDF8F01682753500AD6D0D /* _Ebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Ebook.m; sourceTree = "<group>"; };
+		EEDDF8F31682761100AD6D0D /* BSManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSManagedDocument.h; sourceTree = "<group>"; };
+		EEDDF8F41682761100AD6D0D /* BSManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSManagedDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +96,12 @@
 		AD9362711681C29000B4FA9C /* BSTestArc */ = {
 			isa = PBXGroup;
 			children = (
+				EEDDF8F21682761100AD6D0D /* BSManagedDocument */,
 				AD93627D1681C29000B4FA9C /* Document.h */,
 				AD93627E1681C29000B4FA9C /* Document.m */,
 				AD9362801681C29000B4FA9C /* Document.xib */,
 				AD9362831681C29000B4FA9C /* MainMenu.xib */,
+				EEDDF8D41682708B00AD6D0D /* Model */,
 				AD9362721681C29000B4FA9C /* Supporting Files */,
 			);
 			path = BSTestArc;
@@ -98,11 +112,50 @@
 			children = (
 				AD9362731681C29000B4FA9C /* BSTestArc-Info.plist */,
 				AD9362741681C29000B4FA9C /* InfoPlist.strings */,
+				EEDDF8D216826F6F00AD6D0D /* BSTestArc.entitlements */,
 				AD9362771681C29000B4FA9C /* main.m */,
 				AD9362791681C29000B4FA9C /* BSTestArc-Prefix.pch */,
 				AD93627A1681C29000B4FA9C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEDDF8D41682708B00AD6D0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDF8EE1682753500AD6D0D /* Machine */,
+				EEDDF8EA1682751400AD6D0D /* Human */,
+				EEDDF8D5168270A400AD6D0D /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EEDDF8EA1682751400AD6D0D /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDF8EB1682751400AD6D0D /* Ebook.h */,
+				EEDDF8EC1682751400AD6D0D /* Ebook.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		EEDDF8EE1682753500AD6D0D /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDF8EF1682753500AD6D0D /* _Ebook.h */,
+				EEDDF8F01682753500AD6D0D /* _Ebook.m */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		EEDDF8F21682761100AD6D0D /* BSManagedDocument */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDF8F31682761100AD6D0D /* BSManagedDocument.h */,
+				EEDDF8F41682761100AD6D0D /* BSManagedDocument.m */,
+			);
+			name = BSManagedDocument;
+			path = ../../BSManagedDocument;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD9362881681C29000B4FA9C /* Build configuration list for PBXNativeTarget "BSTestArc" */;
 			buildPhases = (
+				EEDDF8E91682737D00AD6D0D /* ShellScript */,
 				AD9362631681C29000B4FA9C /* Sources */,
 				AD9362641681C29000B4FA9C /* Frameworks */,
 				AD9362651681C29000B4FA9C /* Resources */,
@@ -165,6 +219,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EEDDF8E91682737D00AD6D0D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd BSTestArc\nmogenerator --template-var arc=true -m ../../Common/Model.xcdatamodeld/Model.xcdatamodel -M Machine/ -H Human/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD9362631681C29000B4FA9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -172,6 +242,10 @@
 			files = (
 				AD9362781681C29000B4FA9C /* main.m in Sources */,
 				AD93627F1681C29000B4FA9C /* Document.m in Sources */,
+				EEDDF8D7168270A400AD6D0D /* Model.xcdatamodeld in Sources */,
+				EEDDF8ED1682751400AD6D0D /* Ebook.m in Sources */,
+				EEDDF8F11682753500AD6D0D /* _Ebook.m in Sources */,
+				EEDDF8F51682761100AD6D0D /* BSManagedDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +343,8 @@
 		AD9362891681C29000B4FA9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BSTestArc/BSTestArc.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BSTestArc/BSTestArc-Prefix.pch";
@@ -281,6 +357,8 @@
 		AD93628A1681C29000B4FA9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BSTestArc/BSTestArc.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BSTestArc/BSTestArc-Prefix.pch";
@@ -309,8 +387,23 @@
 				AD93628A1681C29000B4FA9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EEDDF8D5168270A400AD6D0D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EEDDF8D6168270A400AD6D0D /* Model.xcdatamodel */,
+			);
+			currentVersion = EEDDF8D6168270A400AD6D0D /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../../Common/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD93625E1681C29000B4FA9C /* Project object */;
 }

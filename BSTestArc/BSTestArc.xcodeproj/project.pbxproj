@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6039E916834D8E00B85606 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6039E816834D8E00B85606 /* WindowController.m */; };
 		AD93626C1681C29000B4FA9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD93626B1681C29000B4FA9C /* Cocoa.framework */; };
 		AD9362761681C29000B4FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9362741681C29000B4FA9C /* InfoPlist.strings */; };
 		AD9362781681C29000B4FA9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9362771681C29000B4FA9C /* main.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD6039E716834D8E00B85606 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		AD6039E816834D8E00B85606 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		AD9362671681C29000B4FA9C /* BSTestArc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSTestArc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD93626B1681C29000B4FA9C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AD93626E1681C29000B4FA9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				EEDDF8F21682761100AD6D0D /* BSManagedDocument */,
+				AD6039E716834D8E00B85606 /* WindowController.h */,
+				AD6039E816834D8E00B85606 /* WindowController.m */,
 				AD93627D1681C29000B4FA9C /* Document.h */,
 				AD93627E1681C29000B4FA9C /* Document.m */,
 				AD9362801681C29000B4FA9C /* Document.xib */,
@@ -246,6 +251,7 @@
 				EEDDF8ED1682751400AD6D0D /* Ebook.m in Sources */,
 				EEDDF8F11682753500AD6D0D /* _Ebook.m in Sources */,
 				EEDDF8F51682761100AD6D0D /* BSManagedDocument.m in Sources */,
+				AD6039E916834D8E00B85606 /* WindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

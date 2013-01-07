@@ -11,8 +11,7 @@
 
 @implementation Document
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
@@ -26,8 +25,7 @@
     [windowController release];
 }
 
-- (void)windowControllerDidLoadNib:(NSWindowController *)aController
-{
+- (void)windowControllerDidLoadNib:(NSWindowController *)aController {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
 }
